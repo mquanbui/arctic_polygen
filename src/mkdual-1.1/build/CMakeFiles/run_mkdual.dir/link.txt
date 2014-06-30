@@ -1,0 +1,1 @@
+/home/quanb/local/bin/gcc  -O3 -DNDEBUG   CMakeFiles/run_mkdual.dir/src/main.c.o  -o run_mkdual -rdynamic libmkdual.a /home/quanb/arctic_polyGen/mstk/lib/x86_64_Linux/libmstk.a /home/quanb/arctic_polyGen/mcgeom-v1.3rc1/lib/x86_64_Linux/libmcgeom.a -lm 

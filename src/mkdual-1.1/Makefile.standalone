@@ -1,0 +1,112 @@
+# Note that this version DOES NOT USE the OPTIMIZED ATTRIBUTE LIB
+#
+#
+
+# Get the machine type and kernel name. Piping the output of uname
+# through (tr '[A-Z]' '[a-z]') converts the string to lower case
+
+ARCH := $(shell (uname -m))
+OS := $(shell (uname -s))
+ARCHOS := $(ARCH)_$(OS)
+
+
+DEVROOT := $(HOME)/develop
+
+ifeq ($(ARCHOS),i686_Linux)
+  CC = gcc
+  CXX = g++
+  CFLAGS = -fPIC -ansi -Wall 
+  CXXFLAGS = -fPIC -ansi -Wall 
+  CDEPFLAGS = -M
+  CXXDEPFLAGS = -M
+  RANLIB = ls
+  DEBUGFLAGS = -g -DDEBUG
+  OPTFLAGS = -O3
+  DEFINES = -DLINUX
+endif
+
+ifeq ($(ARCHOS),x86_64_Linux)
+  CC = gcc
+  CXX = g++
+  CFLAGS = -fPIC -ansi -Wall 
+  CXXFLAGS = -fPIC -ansi -Wall 
+  CDEPFLAGS = -M
+  CXXDEPFLAGS = -M
+  RANLIB = ls
+  DEBUGFLAGS = -g -DDEBUG
+  OPTFLAGS = -O3
+  DEFINES = -DLINUX
+endif
+
+MSTK = $(DEVROOT)/mstk/1.83dev
+MCGEOM = $(DEVROOT)/mcgeom/1.2dev
+
+MSTKINC = -I$(MSTK)/include
+MCGEOMINC = -I$(MCGEOM)/include
+
+MSTKLIB-D = -L$(MSTK)/lib/$(ARCHOS) -lmstk-d
+MCGEOMLIB-D = -L$(MCGEOM)/lib/$(ARCHOS) -lmcgeom-d
+MSTKLIB = -L$(MSTK)/lib/$(ARCHOS) -lmstk
+MCGEOMLIB = -L$(MCGEOM)/lib/$(ARCHOS) -lmcgeom
+
+
+EXODUS = $(HOME)/packages/ACCESS/libraries/exodusii
+EXODUSINC = -I$(EXODUS)/cbind/include
+EXODUSLIB = -L$(EXODUS) -lexoIIv2c
+NETCDF = $(HOME)/packages/netcdf-4.0.1
+NETCDFINC = -I$(NETCDF)/include
+NETCDFLIB = -L$(NETCDF)/lib -lnetcdf
+HDF5 = /usr/lib
+HDF5LIB = -L$(HDF5) -lhdf5 -lhdf5_hl -lz
+
+INCDIR := -I./include $(MSTKINC) $(MCGEOMINC) $(EXODUSINC) $(NETCDFINC)
+
+LIBS-D = $(MSTKLIB-D) $(MCGEOMLIB-D) $(EXODUSLIB) $(NETCDFLIB) $(HDF5LIB) -lm
+LIBS = $(MSTKLIB) $(MCGEOMLIB) $(EXODUSLIB) $(NETCDFLIB) $(HDF5LIB) -lm
+
+
+dirs := src
+dirs2 := src
+temp := $(foreach dir,$(dirs),$(wildcard $(dir)/*.c))
+hdrs := $(foreach dir,$(dirs),$(wildcard $(dir)/*.h))
+files := $(temp) $(foreach dir,$(dirs),$(wildcard $(dir)/*.h))
+srcs := $(notdir $(temp))
+objs := $(srcs:.c=.o)
+obj := $(addprefix obj/$(ARCHOS)-d/,$(objs))
+optobj := $(addprefix obj/$(ARCHOS)/,$(objs))
+VPATH = obj/$(ARCHOS)-d:obj/$(ARCHOS):$(dirs2)
+
+
+BINDIR := ./bin/$(ARCHOS)
+
+debug: $(obj)
+	$(CC) $(LDFLAGS) $(DEFINES) $(INCDIR) $(DEBUGFLAGS) $^ $(LDOBJS) $(LIBS-D) -o $(BINDIR)/mkdual-d
+
+obj/$(ARCHOS)-d/%.o: src/%.c
+	$(CC) $(DEFINES) $(INCDIR) $(CFLAGS) $(DEBUGFLAGS) -c $< -o $@
+
+%.o: %.c
+	$(CC) $(DEFINES) $(INCDIR) $(CFLAGS) $(DEBUGFLAGS) -c src/$< -o obj/$(ARCHOS)-d/$@
+
+
+
+opt: $(optobj)
+	$(CC) $(LDFLAGS) $(DEFINES) $(INCDIR) $(OPTFLAGS) $^ $(LDOBJS) $(LIBS) -o $(BINDIR)/mkdual
+
+obj/$(ARCHOS)/%.o: src/%.c
+	$(CC) $(DEFINES) $(INCDIR) $(CFLAGS) $(OPTFLAGS) -c $< -o $@
+
+%.o: %.c
+	$(CC) $(DEFINES) $(INCDIR) $(CFLAGS) $(OPTFLAGS) -c src/$< -o obj/$(ARCHOS)/$@
+
+obj/$(ARCHOS)/%.o: src/%.c
+	$(CC) $(DEFINES) $(INCDIR) $(CFLAGS) $(OPTFLAGS) -c $< -o $@
+
+
+clean:
+	/bin/rm bin/$(ARCHOS)/* obj/$(ARCHOS)-d/*.o obj/$(ARCHOS)/*.o
+
+depend:
+	makedepend  $(INCDIR) $(temp)
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.

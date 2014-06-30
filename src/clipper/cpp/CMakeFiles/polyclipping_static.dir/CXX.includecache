@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/quanb/arctic_polyGen/arctic_polygen_package/src/clipper/cpp/clipper.cpp
+clipper.hpp
+/home/quanb/arctic_polyGen/arctic_polygen_package/src/clipper/cpp/clipper.hpp
+cmath
+-
+vector
+-
+algorithm
+-
+stdexcept
+-
+cstring
+-
+cstdlib
+-
+ostream
+-
+iostream
+-
+cstdio
+-
+
+/home/quanb/arctic_polyGen/arctic_polygen_package/src/clipper/cpp/clipper.hpp
+vector
+-
+stdexcept
+-
+cstring
+-
+cstdlib
+-
+ostream
+-
+

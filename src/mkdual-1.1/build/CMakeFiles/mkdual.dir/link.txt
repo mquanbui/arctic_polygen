@@ -1,0 +1,2 @@
+/n/local_linux/bin/ar cr libmkdual.a  CMakeFiles/mkdual.dir/src/MESH_MakeDual.c.o CMakeFiles/mkdual.dir/src/MESH_MakeDual2.c.o CMakeFiles/mkdual.dir/src/MESH_MakeDual3.c.o CMakeFiles/mkdual.dir/src/MESH_HasPlanarFaces.c.o
+/n/local_linux/bin/ranlib libmkdual.a

@@ -1,0 +1,1 @@
+/scratch/ymp/packages/gcc/gcc-4.5.1/bin/c++  -fPIC   -shared -Wl,-soname,libpolyclipping.so -o libpolyclipping.so CMakeFiles/polyclipping.dir/clipper.cpp.o 

@@ -1,0 +1,274 @@
+The system is: Linux - 2.6.18-308.11.1.el5 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/quanb/local/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/quanb/local/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+CMakeCXXCompilerId.cpp:79:58: warning: deprecated conversion from string constant to ‘char*’
+CMakeCXXCompilerId.cpp:192:58: warning: deprecated conversion from string constant to ‘char*’
+CMakeCXXCompilerId.cpp:193:54: warning: deprecated conversion from string constant to ‘char*’
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"
+/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/home/quanb/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/quanb/local/bin/gcc        CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"
+/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/home/quanb/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /n/lanl_linux/packages/cmake28/share/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/quanb/local/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/home/quanb/local/bin/gcc
+COLLECT_LTO_WRAPPER=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.5.1/configure --prefix=/scratch/ymp/packages/gcc/gcc-4.5.1 --with-gmp=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpfr=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpc=/scratch/ymp/packages/mp/gmp-5.0.1
+Thread model: posix
+gcc version 4.5.1 (GCC) 
+COMPILER_PATH=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/quanb/local/lib64/../lib64/:/home/quanb/local/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/../lib64/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/quanb/local/lib64/:/home/quanb/local/lib/:/usr/lib/:/usr/lib64/:/usr/lanl/lib/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o -L/home/quanb/local/lib64/../lib64 -L/home/quanb/local/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/../lib64 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/quanb/local/lib64 -L/home/quanb/local/lib -L/usr/lib64 -L/usr/lanl/lib -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o /usr/lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/quanb/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /n/lanl_linux/packages/cmake28/share/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/home/quanb/local/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/quanb/local/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.5.1/configure --prefix=/scratch/ymp/packages/gcc/gcc-4.5.1 --with-gmp=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpfr=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpc=/scratch/ymp/packages/mp/gmp-5.0.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.5.1 (GCC) ]
+  ignore line: [COMPILER_PATH=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/quanb/local/lib64/../lib64/:/home/quanb/local/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/../lib64/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/quanb/local/lib64/:/home/quanb/local/lib/:/usr/lib/:/usr/lib64/:/usr/lanl/lib/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o -L/home/quanb/local/lib64/../lib64 -L/home/quanb/local/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/../lib64 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/quanb/local/lib64 -L/home/quanb/local/lib -L/usr/lib64 -L/usr/lanl/lib -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o] ==> ignore
+    arg [-L/home/quanb/local/lib64/../lib64] ==> dir [/home/quanb/local/lib64/../lib64]
+    arg [-L/home/quanb/local/lib/../lib64] ==> dir [/home/quanb/local/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/../lib64] ==> dir [/usr/lib64/../lib64]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/home/quanb/local/lib64] ==> dir [/home/quanb/local/lib64]
+    arg [-L/home/quanb/local/lib] ==> dir [/home/quanb/local/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lanl/lib] ==> dir [/usr/lanl/lib]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/home/quanb/local/lib64/../lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/home/quanb/local/lib/../lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib64/../lib64] ==> [/usr/lib64]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib64]
+  collapse dir [/lib/../lib64] ==> [/lib64]
+  collapse dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse dir [/home/quanb/local/lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/home/quanb/local/lib] ==> [/home/quanb/local/lib]
+  collapse dir [/usr/lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lanl/lib] ==> [/usr/lanl/lib]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib]
+  implicit libs: [c]
+  implicit dirs: [/home/quanb/local/lib64;/usr/lib64;/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1;/scratch/ymp/packages/gcc/gcc-4.5.1/lib64;/lib64;/home/quanb/local/lib;/usr/lanl/lib;/scratch/ymp/packages/gcc/gcc-4.5.1/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"
+/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/home/quanb/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/quanb/local/bin/c++         CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"
+/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/home/quanb/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /n/lanl_linux/packages/cmake28/share/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/home/quanb/local/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/home/quanb/local/bin/c++
+COLLECT_LTO_WRAPPER=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.5.1/configure --prefix=/scratch/ymp/packages/gcc/gcc-4.5.1 --with-gmp=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpfr=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpc=/scratch/ymp/packages/mp/gmp-5.0.1
+Thread model: posix
+gcc version 4.5.1 (GCC) 
+COMPILER_PATH=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/home/quanb/local/lib64/../lib64/:/home/quanb/local/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/../lib64/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/quanb/local/lib64/:/home/quanb/local/lib/:/usr/lib/:/usr/lib64/:/usr/lanl/lib/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o -L/home/quanb/local/lib64/../lib64 -L/home/quanb/local/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/../lib64 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/quanb/local/lib64 -L/home/quanb/local/lib -L/usr/lib64 -L/usr/lanl/lib -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o /usr/lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/n/lanl_linux/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/n/lanl_linux/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_progress_report /home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/quanb/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /n/lanl_linux/packages/cmake28/share/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/n/lanl_linux/packages/cmake28/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/home/quanb/local/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/quanb/local/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.5.1/configure --prefix=/scratch/ymp/packages/gcc/gcc-4.5.1 --with-gmp=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpfr=/scratch/ymp/packages/mp/gmp-5.0.1 --with-mpc=/scratch/ymp/packages/mp/gmp-5.0.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.5.1 (GCC) ]
+  ignore line: [COMPILER_PATH=/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/home/quanb/local/lib64/../lib64/:/home/quanb/local/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/../lib64/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/quanb/local/lib64/:/home/quanb/local/lib/:/usr/lib/:/usr/lib64/:/usr/lanl/lib/:/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o -L/home/quanb/local/lib64/../lib64 -L/home/quanb/local/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/../lib64 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1 -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/quanb/local/lib64 -L/home/quanb/local/lib -L/usr/lib64 -L/usr/lanl/lib -L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/libexec/gcc/x86_64-unknown-linux-gnu/4.5.1/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtbegin.o] ==> ignore
+    arg [-L/home/quanb/local/lib64/../lib64] ==> dir [/home/quanb/local/lib64/../lib64]
+    arg [-L/home/quanb/local/lib/../lib64] ==> dir [/home/quanb/local/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/../lib64] ==> dir [/usr/lib64/../lib64]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/home/quanb/local/lib64] ==> dir [/home/quanb/local/lib64]
+    arg [-L/home/quanb/local/lib] ==> dir [/home/quanb/local/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lanl/lib] ==> dir [/usr/lanl/lib]
+    arg [-L/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..] ==> dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/home/quanb/local/lib64/../lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/home/quanb/local/lib/../lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lib64/../lib64] ==> [/usr/lib64]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../../../lib64] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib64]
+  collapse dir [/lib/../lib64] ==> [/lib64]
+  collapse dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse dir [/home/quanb/local/lib64] ==> [/home/quanb/local/lib64]
+  collapse dir [/home/quanb/local/lib] ==> [/home/quanb/local/lib]
+  collapse dir [/usr/lib64] ==> [/usr/lib64]
+  collapse dir [/usr/lanl/lib] ==> [/usr/lanl/lib]
+  collapse dir [/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1/../../..] ==> [/scratch/ymp/packages/gcc/gcc-4.5.1/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/home/quanb/local/lib64;/usr/lib64;/scratch/ymp/packages/gcc/gcc-4.5.1/lib/gcc/x86_64-unknown-linux-gnu/4.5.1;/scratch/ymp/packages/gcc/gcc-4.5.1/lib64;/lib64;/home/quanb/local/lib;/usr/lanl/lib;/scratch/ymp/packages/gcc/gcc-4.5.1/lib]
+
+

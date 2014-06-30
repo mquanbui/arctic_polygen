@@ -1,0 +1,12 @@
+**PolygonGeneration**
+100
+Uniform
+10
+60
+**Model**
+IntermediateScale
+0.01
+2
+-0.6
+-0.6
+

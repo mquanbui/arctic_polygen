@@ -1,0 +1,2 @@
+/home/quanb/arctic_polyGen/mkdual-1.1/bin/x86_64_Linux/run_mkdual
+/home/quanb/arctic_polyGen/mkdual-1.1/lib/x86_64_Linux/libmkdual.a

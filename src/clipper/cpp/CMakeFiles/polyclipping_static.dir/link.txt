@@ -1,0 +1,2 @@
+/n/local_linux/bin/ar cr libpolyclipping_static.a  CMakeFiles/polyclipping_static.dir/clipper.cpp.o
+/n/local_linux/bin/ranlib libpolyclipping_static.a

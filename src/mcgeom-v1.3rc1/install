@@ -1,0 +1,88 @@
+#!/bin/sh
+
+if [ "$1" == "" ]
+then
+  echo "USAGE: install version_number"
+  exit
+fi
+
+VER=$1
+
+ARCHOS=i686_linux
+
+INSTALL_TOPDIR=$HOME
+
+#----------- DO NOT EDIT BELOW THIS LINE --------------------------------------
+
+LOCAL_LIBDIR=./lib/$ARCHOS
+LOCAL_INCDIR=./include 
+INSTALL_LIBDIR=$INSTALL_TOPDIR/lib/$ARCHOS
+INSTALL_INCDIR=$INSTALL_TOPDIR/include/mcgeom-$VER
+INSTALL_INCDIR_DEFAULT=$INSTALL_TOPDIR/include/mcgeom
+
+# MAKE THIS THE DEFAULT VERSION?
+
+default=n
+echo "Do you want to make the installed version the default?"
+read ans
+if [ "$ans" == "y" ] || [ "$ans" == "yes" ] || [ "$ans" == "Y" ] || [ "$ans" == "YES" ]
+then
+  default=y
+fi
+
+if [ ! -d $INSTALL_INCDIR ]
+then
+  mkdir -p $INSTALL_INCDIR
+fi
+ln -sf $INSTALL_INCDIR $INSTALL_INCDIR_DEFAULT
+
+if [ ! -d $INSTALL_LIBDIR ]
+then
+  mkdir -p $INSTALL_LIBDIR
+fi
+
+ans=y
+if [ -f $INSTALL_INCDIR/MCGeom.h ]
+then
+  echo $INSTALL_INCDIR/MCGeom.h " exists!! Overwrite?"
+  read ans
+fi
+
+if [ "$ans" == "y" ] || [ "$ans" == "yes" ] || [ "$ans" == "Y" ] || [ "$ans" == "YES" ]
+then
+  cp $LOCAL_INCDIR/MCGeom.h $INSTALL_INCDIR
+fi
+
+ans=y
+if [ -f $INSTALL_LIBDIR/libmstkutil-$VER.a ]
+then
+  echo "$INSTALL_LIBDIR/libmstkutil-$VER.a exists!! Overwrite?"
+  read ans
+fi
+
+if [ "$ans" == "y" ] || [ "$ans" == "yes" ] || [ "$ans" == "Y" ] || [ "$ans" == "YES" ]
+then
+  cp $LOCAL_LIBDIR/libmcgeom.a $INSTALL_LIBDIR/libmcgeom-$VER.a
+fi
+
+if [ "$default" == "y" ]
+then
+  ln -sf $INSTALL_LIBDIR/libmcgeom-$VER.a $INSTALL_LIBDIR/libmcgeom.a 
+fi
+
+ans=y
+if [ -f $INSTALL_LIBDIR/libmcgeom-d-$VER.a ]
+then
+  echo "$INSTALL_LIBDIR/libmcgeom-d-$VER.a exists!! Overwrite?"
+  read ans
+fi
+
+if [ "$ans" == "y" ] || [ "$ans" == "yes" ] || [ "$ans" == "Y" ] || [ "$ans" == "YES" ]
+then
+  cp $LOCAL_LIBDIR/libmcgeom-d.a $INSTALL_LIBDIR/libmcgeom-d-$VER.a
+fi
+
+if [ "$default" == "y" ]
+then
+  ln -sf $INSTALL_LIBDIR/libmcgeom-d-$VER.a $INSTALL_LIBDIR/libmcgeom-d.a 
+fi

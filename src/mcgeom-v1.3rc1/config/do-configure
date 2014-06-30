@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Configure script 
+# 
+# Run this script in a separate build directory
+# DO NOT RUN THIS SCRIPT IN THE TOP LEVEL DIRECTORY OF THE PROJECT
+#
+# Run this script as ./do_configure and then run 'make install'
+# or 'make' followed by 'make install'
+#
+# Use CMAKE_BUILD_TYPE:STRING="Release" for optimized code and
+#                            ="Debug" for debug code
+#                            ="RelWithDebugInfo" for optimized code with debug symbols
+#                            ="MinSizeRel" for min size optimized library
+#
+# CMAKE_INSTALL_PREFIX indicates the top level directory for the installation
+# the project executable or library and include files
+#
+# if APPEND_ARCHOS_TO_INSTALLPATH=yes, then ARCHOS will be appended to 
+# install paths of libraries and executables (e.g. executables will be
+# installed in $CMAKE_INSTALL_PREFIX/bin/i686_linux) 
+#
+
+
+rm -f CMakeCache.txt
+
+SOURCE=$HOME/arctic_polyGen/mcgeom-v1.3rc1
+
+export ARCHOS="`uname -m`_`uname -s`"
+
+/usr/lanl/bin/cmake \
+  -D CMAKE_C_COMPILER:FILEPATH="gcc" \
+  -D CMAKE_BUILD_TYPE:STRING="Release" \
+  -D CMAKE_INSTALL_PREFIX:FILEPATH=$SOURCE \
+  -D APPEND_ARCHOS_TO_INSTALLPATH=yes \
+  $SOURCE

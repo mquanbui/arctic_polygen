@@ -1,0 +1,2 @@
+/home/quanb/arctic_polyGen/arctic_polygen_package/src/clipper/cpp/CMakeFiles/polyclipping.dir
+/home/quanb/arctic_polyGen/arctic_polygen_package/src/clipper/cpp/CMakeFiles/polyclipping_static.dir

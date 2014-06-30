@@ -1,0 +1,67 @@
+--- main.c	2012-11-27 12:05:01.167766000 -0700
++++ main.c	2012-11-27 11:50:53.553645000 -0700
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <math.h>
+ #include "MSTK.h"
+ #include "mkdual.h"
+ 
+@@ -92,7 +93,7 @@
+ 
+   if (native) {
+     mesh1 = MESH_New(F1);
+-    ok = MESH_InitFromFile(mesh1,infname);
++    ok = MESH_InitFromFile(mesh1,infname,NULL);
+     if (!ok) {
+       fprintf(stderr,"Cannot open input file %s\n",infname);
+       exit(-1);
+@@ -102,7 +103,7 @@
+   else {
+ 
+     mesh1 = MESH_New(F1);
+-    ok = MESH_ImportFromFile(mesh1,infname,format);
++    ok = MESH_ImportFromFile(mesh1,infname,format,NULL,NULL);
+     if (!ok) {
+       fprintf(stderr,"Cannot open input file %s\n",infname);
+       exit(-1);
+@@ -146,22 +147,35 @@
+   if (!MESH_CheckTopo(mesh2))
+     fprintf(stderr,"Dual mesh is not valid\n");
+ 
++
++  double maxdev;
++  if (!MESH_HasPlanarFaces(mesh2,&maxdev)) {
++    double PI = 3.1415926;
++    fprintf(stderr,"***WARNING*** Mesh has curved faces\n");
++    fprintf(stderr,"Maximum deviation of face normals is %-lf degrees\n", maxdev*180/PI);
++  }
++  else
++    fprintf(stderr,"Mesh has only planar faces\n");
++
+   /***********************************************************************/
+ 
+ 
+   if (native) {
+-    MESH_WriteToFile(mesh2,outfname,F1);
++    MESH_WriteToFile(mesh2,outfname,F1,NULL);
+ 
+     strcpy(gmvfname,mname);
+     strcat(gmvfname,"-dual.gmv");
+-    MESH_ExportToGMV(mesh2,gmvfname,0,NULL,NULL);
++    MESH_ExportToGMV(mesh2,gmvfname,0,NULL,NULL,NULL);
+   }
+   else {
+ 
+-    MESH_ExportToFile(mesh2,outfname,format,natt,(const char **)attnames,outopts);
++    MESH_ExportToFile(mesh2,outfname,format,natt,(const char **)attnames,outopts,NULL);
+ 
+   }
+ 
++  MESH_Delete(mesh1);
++  MESH_Delete(mesh2);
++
+   exit(0);
+ }
+ 

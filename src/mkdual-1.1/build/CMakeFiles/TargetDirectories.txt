@@ -1,0 +1,2 @@
+/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/mkdual.dir
+/home/quanb/arctic_polyGen/mkdual-1.1/build/CMakeFiles/run_mkdual.dir
